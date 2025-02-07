@@ -183,6 +183,7 @@ export class YouTubeProvider
       { muted, playsInline, nativeControls } = this.#ctx.$state,
       showControls = nativeControls();
     return {
+      rel: 0,
       autoplay: 0,
       cc_lang_pref: this.language,
       cc_load_policy: showControls ? 1 : undefined,
